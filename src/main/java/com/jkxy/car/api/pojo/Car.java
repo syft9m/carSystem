@@ -7,6 +7,8 @@ public class Car {
     private String carType;
     private String price;
     private String carSeries;
+    private int carQuantity;
+
 
     public int getId() {
         return id;
@@ -48,6 +50,14 @@ public class Car {
         this.carSeries = carSeries;
     }
 
+    public int getCarQuantity() {
+        return carQuantity;
+    }
+
+    public void setCarQuantity(int carQuantity) {
+        this.carQuantity = carQuantity;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -56,6 +66,8 @@ public class Car {
                 ", carType='" + carType + '\'' +
                 ", price='" + price + '\'' +
                 ", carSeries='" + carSeries + '\'' +
+                ", carQuantity=" + carQuantity +
                 '}';
     }
+
 }
